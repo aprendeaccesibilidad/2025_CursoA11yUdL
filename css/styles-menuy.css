@@ -351,7 +351,7 @@ button {
 
 .btn-custom-border {
     color: #fff; /* color del texto */
-    background-color: #0d6efd; /* color de fondo */
+    background-color:#0000EB; /* #0d6efd; *//* color de fondo */
     border: 1px solid #0d6efd; /* borde igual al fondo */
     border-radius: 4px;
     padding: 0.75rem 1.5rem;

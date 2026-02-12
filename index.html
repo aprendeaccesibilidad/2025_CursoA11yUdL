@@ -13,7 +13,7 @@
         
 
     <!-- CSS de Boostrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 
     <!-- CSS de Iconos-boostrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -512,7 +512,7 @@
         
               <table class="table-calendario" role="table">
                 <caption class="visually-hidden">Calendario de clases sincrónicas del curso</caption>
-                <thead class="table">
+                <thead class="table-dark">
                   <tr>
                     <th scope="col">Módulo / Evento</th>
                     <th scope="col">Fechas</th>
@@ -564,7 +564,8 @@
         
             <section class="container">
               <!-- fila responsiva: 1 columna en móvil, 2 en tablet y escritorio -->
-              <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+        <!--      <div class="row row-cols-1 row-cols-md-2 g-4 mb-4"> -->
+          <div class="row row-cols-1 g-4 mb-4"></div>
         
                 <!-- ✅ CARD 1: Curso completo -->
                 <div class="col">
@@ -596,17 +597,20 @@
                         <li><i class="bi bi-check-circle-fill text-success me-2" aria-hidden="true"></i>Certificado UdL</li>
                       </ul>
         
-                      <div class="botonCurso">
-                        <a role="button" class="w-100 btn-custom-border text-center text-decoration-none" href="http://www.cfc.udl.cat/fc/avis/?idioma=es&codi=007I">
-                          Preinscripción Curso Completo
-                        </a>                                         
-                      </div>
                       
+
+                      <a class="botonCurso w-100 text-center text-decoration-none"
+                          href="http://www.cfc.udl.cat/fc/avis/?idioma=es&codi=007I">
+                        Preinscripción Curso Completo
+                      </a>
+
+
                     </div>
                   </div>
                 </div>
         
                 <!-- CARD 2: Módulos individuales -->
+                 <!--
                 <div class="col">
                   <div class="card h-100 shadow-sm">
                     <div class="card-header bg-dark text-white py-3">
@@ -646,7 +650,7 @@
                       
                     </div>
                   </div>
-                </div>
+                </div>-->
         
               </div>
             </section>
@@ -747,7 +751,7 @@
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                        <button class="btn-custom-border" type="submit" aria-label="enviar formulario de contacto" onclick="alert('Formulario enviado')">Enviar</button>
+                        <button class="botonCurso" type="submit" aria-label="enviar formulario de contacto" onclick="alert('Formulario enviado')">Enviar</button>
                     </form>
                 </secction>
                 
@@ -765,10 +769,10 @@
     <div class="container p-4">
       <section class="mb-4 text-center">
 
-        <a class="text-dark p-3" href="#!" role="button" aria-label="enlace a youtube">
+        <a class="text-dark p-3" href="#!" aria-label="enlace a youtube">
             <i class="bi bi-youtube"></i>
         </a>
-        <a class="text-dark p-3" href="#!" role="button" aria-label="enlace a github">
+        <a class="text-dark p-3" href="#!" aria-label="enlace a github">
             <i class="bi bi-github"></i>
         </a>
       </section>
@@ -806,7 +810,8 @@
             <!--Grid column-->
             <div class="col-auto">
               <!-- Submit button -->
-              <button type="submit" class="btn-custom-border" onclick="alert('Formulario enviado')" aria-label="enviar información para futuras ediciones">
+              
+              <button type="submit" class="botonCurso" onclick="alert('Formulario enviado')" aria-label="enviar información para futuras ediciones">
                     Enviar
               </button>
             </div>
@@ -825,10 +830,8 @@
   <div class="container">
     <div class="row text-center text-md-start g-4">
       <!-- Column: Navegación -->
-      <div class="col-12 col-md-6">
-        <p class="text-uppercase">Navegación</p>
-        <nav class="piepagina" aria-label="menú principal del pie de página">
-          <ul class="list-unstyled lh-1">
+      <nav aria-label="Menú del pie de página" class="col-12 col-md-6">
+        <ul class="list-unstyled lh-1">
             <li><a href="#programa" title="Conoce el programa del curso">Programa</a></li>
             <li><a href="#profesores" title="Perfil de los profesores">Profesores</a></li>
             <li><a href="#calendario" title="Encuentra información del calendario del curso">Calendario</a></li>
@@ -837,15 +840,27 @@
             <li><a href="#contacto" title="Envía un mensaje">Contacto</a></li>
           </ul>
         </nav>
-      </div>
+      </nav>
 
       <!-- Column: Información y logo -->
       <div class="col-12 col-md-6">
         <div class="mb-3 text-center text-md-start">
-          <a class="btn btn-outline btn-floating m-1" href="https://www.formaciocontinua.udl.cat/" role="button" aria-label="enlace a la web de formación continua">
+          <!--
+          <a class="btn btn-floating m-1" href="https://www.formaciocontinua.udl.cat/" role="button" aria-label="enlace a la web de formación continua">
             <img src="img/logo.jpg" alt="logo del centro de formación continua Universitat de Lleida" width="102" height="57" class="img-fluid mb-3">
           </a>
-        </div>
+-->
+          
+
+        <a class="btn btn-floating m-1"
+            href="https://www.formaciocontinua.udl.cat/"
+            aria-label="Ir a la web del Centre de Formació Contínua">
+            <img src="img/logo.jpg" alt="logo del centro de formación continua Universitat de Lleida" width="102" height="57" class="img-fluid mb-3">
+        </a>
+
+
+      </div>
+
         <div class="text-center text-md-start">
           <p><strong>Universitat de Lleida</strong></p>
           <p class="text-body-secondary">Centre de Formació Contínua</p>

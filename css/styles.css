@@ -220,9 +220,11 @@ article {
 
 
   /*CURSO */
+  /*
 .botonCurso a {
     border: 0;
     color: #fdfeff;
+    background-color:#0000EB;
     display: inline-block;
     margin-bottom: 1rem;
     margin-top: 0;
@@ -231,7 +233,7 @@ article {
 }
 
 .botonCurso a:hover {
-    /*color: #024488;*/
+    
     color:#000 !important;
     background-color: #FADD4A;
 }
@@ -240,6 +242,86 @@ article {
     background-image: linear-gradient(to top, #000 3px, #f9dc4a 3px, #f9dc4a);
     background-color: #f9dc4a;
     color:#000 !important;
+}
+
+*/
+
+/* CURSO */
+.botonCurso {
+  border: 1px solid #000;
+  color: #fff;
+  background-color:#0000EB;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding: 0.5625rem 1rem;
+  border-radius: 4px;
+}
+
+.botonCurso:hover {
+  color:#000;
+  background-color: #FADD4A;
+  border: 1px solid #000;
+}
+
+.botonCurso:focus {
+  background-color: #f9dc4a;
+  color:#000;
+  border: 1px solid #000;
+}
+.botonCurso:visited {
+  color: #fff;
+}
+
+/* importante para enlaces */
+a.botonCurso:visited {
+  color: #fff;
+}
+
+a.botonCurso:hover {
+  color:#000;
+  background-color: #FADD4A;
+  border: 1px solid #000;
+}
+
+a.botonCurso:focus {
+  background-color: #f9dc4a;
+  color:#000;
+  border: 1px solid #000;
+}
+
+
+
+.btn:focus,
+.btn-floating:focus,
+a.botonCurso:focus {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+
+/* Botón flotante */
+.btn-floating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+/* foco visible + fondo amarillo en el contenedor */
+a.btn-floating:focus-visible {
+  outline: 2px solid #000061;
+  outline-offset: 4px;
+  box-shadow: none;
+  background-color: #f9dc4a;
+}
+
+/* opcional: solo el borde para la imagen */
+a.btn-floating:focus-visible img {
+  outline: 2px solid #000061;
+  outline-offset: 4px;
+  border-radius: .25rem;
 }
 
 
@@ -256,7 +338,7 @@ form {
 
 input, textarea {
     padding: 0.5rem;
-    border: 1px solid #151515;
+    border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -333,7 +415,6 @@ footer {
     padding: 0.75rem;
     border: 1px solid #ccc;
     text-align: left;
-    color: #151515;
   }
   
   /* --- Versión móvil accesible --- */
