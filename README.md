@@ -1,4 +1,4 @@
-# 2025_CursoA11yUdL
+# CursoA11yUdL
 Web del curso de accesibilidad 2026
 https://aprendeaccesibilidad.github.io/CursoA11yUdL/
 
