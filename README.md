@@ -1,11 +1,9 @@
 # 2025_CursoA11yUdL
-Web del curso de accesibilidad
+Web del curso de accesibilidad 2026
+https://aprendeaccesibilidad.github.io/CursoA11yUdL/
 
-Página accesible
-https://aprendeaccesibilidad.github.io/2025_CursoA11yUdL/
 
-Página NO accesible
-https://aprendeaccesibilidad.github.io/2025_CursoA11yUdL/indexNOA.html
-
-Página NO accesible (con iconos de error) publicación de congreso
-https://aprendeaccesibilidad.github.io/2025_CursoA11yUdL/indexNOA_icoErrores.html
+Paginas del curso 2025/26
+Página accesible https://aprendeaccesibilidad.github.io/CursoA11yUdL/2025_CursoA11yUdL-main/
+Página NO accesible https://aprendeaccesibilidad.github.io/CursoA11yUdL/2025_CursoA11yUdL-main/indexNOA.html
+Página NO accesible (con iconos de error) publicación de congreso https://aprendeaccesibilidad.github.io/CursoA11yUdL/2025_CursoA11yUdL/indexNOA_icoErrores.html
